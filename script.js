@@ -4,51 +4,61 @@ let A=0,T=0;function tick(t){A=(t/40)%360;$('#logo').innerHTML=sig(A);if(t-T>350
 const DC={Phy:'#7fb5a8',Ana:'#d9a68a',His:'#a99bd0',Bio:'#e0c27a',Mic:'#9ac2d6',Pth:'#c98f9d',Pha:'#8fc09a',Par:'#c7b28a',Res:'#aab0ae'};
 const D=[
 ['#','WEEK 1'],
-['Sat 5 Sep','Synapse & synaptic transmission@Phy;Ganglia & receptors@His;Neurotransmitters@Bio','Cranial cavity bones@Ana'],
-['Sun 6 Sep','Anatomy of cranial cavity (dural folds)@Ana;Sensory receptors@Phy;Data collection@Res',''],
-['Mon 7 Sep','Venous sinus, cranial nerves@Ana;Somatic sensation – sensory tracts@Phy;Brain metabolism@Bio',''],
-['Tue 8 Sep','Spinal cord@His;Pain sensations@Phy;Scalp, face@Ana','CSF report@Bio'],
-['Wed 9 Sep','Visceral pain sensation@Phy;Sampling methods@Res;Triangles of neck 1@Ana','Sensory examination@Phy'],
-['Thu 10 Sep','Headache & endogenous pain control@Phy;Cerebral & cerebellar cortices@His;Triangles of neck 2@Ana','Ganglia, receptors & spinal cord@His'],
+['Sat 5 Sep','Synapse & Synaptic transmission@Phy;Ganglia & receptor@His;Neurotransmitters@B1','Cranial Cavity Bones@Anatomy 1'],
+['Sun 6 Sep','Anatomy of the cranial cavity (Dural folds)@Ana;Sensory Receptors@Phy;Data collection@R1',''],
+['Mon 7 Sep','Venous sinus, cranial nerves@Ana;Somatic Sensation-Sensory tracts@Phy;Brain metabolism@B1',''],
+['Tue 8 Sep','Spinal cord@His;Pain Sensations@Phy;Scalp, face@Ana','CSF Report@Biochemistry'],
+['Wed 9 Sep','Visceral Pain Sensation@Phy;Sampling methods@Res;Triangles of Neck 1 (anterior triangle)@Ana','Sensory Examination@Physiology 1'],
+['Thu 10 Sep','Headache& Endogenous pain control system@Phy;Cerebral & cerebellar cortices@His;Triangles of Neck 2 (posterior triangle)@Ana','Ganglia, Receptors and Spinal cord@Histology 1'],
 ['#','WEEK 2'],
-['Sat 12 Sep','Sensory cortex & lesions@Phy;Lymphatics of H&N, cranial Ns 1@Ana;Bacterial meningitis@Mic','Cranial cavity, scalp, face@Ana'],
-['Sun 13 Sep','Cranial Ns 2@Ana;Motor cortex@Phy;Motor descending tracts 1@Phy','Cerebrum & cerebellum@His'],
-['Mon 14 Sep','Motor descending tracts 2@Phy;Cranial Ns 3@Ana;M. leprae & Borrelia@Mic','Tutorial: sensory@Phy;Triangles of the neck@Ana'],
-['Tue 15 Sep','Development of head & neck 1@Ana;Intracranial haemorrhage, infarction & ICP@Pth;Reflex action & properties@Phy',''],
-['Wed 16 Sep','Data summarization & presentation@Res;Classification of human reflexes@Phy;Development of head & neck 2@Ana',''],
-['Thu 17 Sep','Anatomy of cerebrum 1@Ana;Stretch reflex 1@Phy;Clostridium tetani@Mic','Tutorial: cranial cavity, triangles, face, scalp@Ana'],
+['Sat 12 Sep','Sensory Cortex & Lesions@Phy;Lymphatics of H& N, cranial Ns 1@Ana;Bacterial Meningitis@Mic','Cranial cavity (folds, sinuses, cranial nerves), Scalp, face@Anatomy 2'],
+['Sun 13 Sep','Cranial Ns 2@Ana;Motor Cortex@Phy;The Motor Descending Tracts 1@Phy','Cerebrum & cerebellum@Histology 2'],
+['Mon 14 Sep','The Motor Descending Tracts 2@Phy;Cranial Ns 3@Ana;M. Leprae & Borrili@Mic','Tutorial: Sensory Tutorial@Physiology 1;Triangles of the neck@Anatomy 3'],
+['Tue 15 Sep','Development of head & neck 1@Ana;Intracranial hemorrhage, infarction & increased intracranial pressure@Pth;Reflex Action & Its Properties@Phy',''],
+['Wed 16 Sep','Data summarization and presentation@Res;Classification of Human Reflexes@Phy;Development of head & neck 2@Ana',''],
+['Thu 17 Sep','Anatomy of cerebrum 1@Ana;Deep Spinal Cord Reflexes: Stretch Reflex 1@Phy;Clostridium Tetani@Mic','Tutorial: Cranial cavity, triangles, face, scalp@Anatomy 1'],
 ['#','WEEK 3'],
-['Sat 19 Sep','CNS infections@Pth;Anatomy of cerebrum 2@Ana;Stretch reflex 2@Phy','Cerebrum 1 (lateral surface)@Ana'],
-['Sun 20 Sep','Brain stem I (external features)@Ana;UMNL vs LMNL 1@Phy;Opioid analgesics I@Pha','Cerebrum 2 (medial, inferior, blood supply)@Ana'],
-['Mon 21 Sep','UMNL vs LMNL 2@Phy;Brain stem II@Ana;Central tendency & dispersion@Res','Motor practical 1@Phy'],
-['Tue 22 Sep','Opioid analgesics II@Pha;Basal ganglia 1@Phy;Anatomy of cerebellum@Ana','Lab diagnosis of Neisseria meningitidis & CNS bacteria@Mic'],
-['Wed 23 Sep','Basal ganglia 2@Phy;Blood supply of the brain@Ana;Degenerating & demyelinating disorders@Pth','Tutorial: cerebrum, brain stem@Ana;Tutorial: bacterial CNS infections@Mic'],
-['Thu 24 Sep',null,'Study Leave','s'],['#','WEEK 4'],['Sat 26 Sep',null,'Study Leave','s'],['Sun 27 Sep',null,'Study Leave','s'],['Mon 28 Sep',null,'Mid-Module Exam','x'],
-['Tue 29 Sep','Cerebellum 1@Phy;Diencephalon@Ana;Viral infections of the CNS@Mic','Research practical@Res'],
-['Wed 30 Sep','Internal capsule, white matter & basal ganglia@Ana;Helminths affecting the CNS@Par;Cerebellum 2@Phy','Brain stem, cerebellum@Ana'],
-['Thu 1 Oct','Reticular formation & RAS@Phy;Drugs for Parkinson’s I@Pha;Ventricular system 1 & CSF@Ana','Cranial nerve examination@Phy;Effect of analgesic drugs@Pha'],
+['Sat 19 Sep','CNS infections@Pth;Anatomy of cerebrum 2@Ana;Stretch Reflex 2@Phy','Cerebrum 1 (lateral surface)@Anatomy 4'],
+['Sun 20 Sep','Anatomy of brain stem I (external features)@Ana;Umnl Vs Lmnl 1@Phy;Opioid analgesics and antagonists I@Pha','Cerebrum 2 (medial, inferior surface, blood supply)@Anatomy 5'],
+['Mon 21 Sep','Umnl Vs Lmnl 2@Phy;Anatomy of brain stem II@Ana;Measures of central tendency and dispersion@Res','Motor Practical 1@Physiology 2'],
+['Tue 22 Sep','Opioid analgesics and antagonists II@Pha;Basal Ganglia 1@Phy;Anatomy of cerebellum 9@Ana','Lab diagnosis of Neisseria meningitides and other bacteria infecting the CNS@Microbiology 1'],
+['Wed 23 Sep','Basal Ganglia 2@Phy;Blood supply of the brain@Ana;Degenerating and demyelinating neurological disorders@Pth','Tutorial: Cerebrum, brain stem@Anatomy 2;Tutorial: Case based discussion of bacterial CNS infections@Microbiology 1'],
+['Thu 24 Sep',null,'Study Leave','s'],
+['#','WEEK 4'],
+['Sat 26 Sep',null,'Study Leave','s'],['Sun 27 Sep',null,'Study Leave','s'],['Mon 28 Sep',null,'Mid-Module Exam','x'],
+['Tue 29 Sep','Cerebellum 1@Phy;Diencephalon@Ana;Viral infections of the CNS@Mic','Research@Res'],
+['Wed 30 Sep','Anatomy of internal capsule, white matter & basal ganglia@Ana;Parasites affecting the nervous system & special senses (General)Helminths affecting the CN@Par;Cerebellum 2@Phy','Brain stem, cerebellum@Anatomy 6'],
+['Thu 1 Oct','Reticular Formation and Reticular Activating System@Phy;Drugs for Parkinson’s disease I@Pha;Ventricular system 1 (lateral)& CSF@Ana','Cranial Nerve Examination@Physiology 3;Study pharmacological effect of analgesic drugs@Pharmacology 1'],
 ['#','WEEK 5'],
-['Sat 3 Oct','Sleep physiology@Phy;Rabies@Mic;Drugs for Parkinson’s II@Pha','Tutorial: motor system@Phy'],
-['Sun 4 Oct','Thalamus, hypothalamus & limbic system 1@Phy;Ventricular system 2 & CSF@Ana;Antiseizure drugs I@Pha','Motor system 2@Phy'],
-['Mon 5 Oct','Filarial worms of CNS & eye@Par;Antiseizure drugs II@Pha;Tumors of the CNS@Pth','Ventricles, internal capsule@Ana'],
-['Tue 6 Oct','Thalamus, hypothalamus & limbic system 2@Phy;Sedative hypnotics I@Pha;Enteroviruses & poliomyelitis@Mic','Tutorial: opioids, antiseizure, Parkinson’s@Pha;Tutorial: cerebellum, ventricles, capsule@Ana'],
-['Wed 7 Oct','Learning & memory@Phy;Sedative hypnotics II@Pha;Normal distribution & CLT@Res',''],
-['Thu 8 Oct',null,'Day Off for 6th October Armed Forces Day','o'],['#','WEEK 6'],
-['Sat 10 Oct','Antidepressants I@Pha;Robo & arboviral encephalitis, prions@Mic;Free-living amoebae@Par','Morphology of CNS diseases@Pth'],
-['Sun 11 Oct','Antidepressants II@Pha;Speech physiology & disorders@Phy;Toxoplasma gondii 1@Par','Lab diagnosis of meningitis & encephalitis@Mic;Tutorial: CNS disorder cases@Pth'],
-['Mon 12 Oct','Toxoplasma 2 & other CNS protozoa@Par;Posture & equilibrium 1@Phy;Anatomy of orbit 1@Ana','Tutorial: viral CNS infections@Mic'],
-['Tue 13 Oct','Anatomy of orbit 2 (nerves)@Ana;External & middle coats of eye@His;Posture & equilibrium 2@Phy','Parasites of CNS & special senses@Par'],
-['Wed 14 Oct','Antipsychotics & mood stabilizers I@Pha;Nervous coat of eye, eyelid, conjunctiva@His;Intro to physiology of vision@Phy','Tutorial: parasitism of CNS & senses@Par'],
-['Thu 15 Oct','Antipsychotics & mood stabilizers II@Pha;Accommodation, light reflex, refraction@Phy;Vitamin A (rhodopsin cycle)@Bio','Histology of eye@His;Eye 1@Phy'],
+['Sat 3 Oct','Sleep Physiology@Phy;Rabies@Mic;Drugs for Parkinson’s disease II@Pha','Tutorial: Motor system@Physiology 2'],
+['Sun 4 Oct','Thalamus, Hypothalamus & Limbic System@Phy;Ventricular system 2 (3rd,4th), CSF@Ana;Antiseizure drugs I@Pha','Motor system 2@Physiology 4'],
+['Mon 5 Oct','Filarial worms of the CNS and eye@Par;Antiseizure drugs II@Pha;Tumors of the CNS@Pth','Ventricles, internal capsule@Anatomy 7'],
+['Tue 6 Oct','Thalamus, Hypothalamus and Limbic System 2@Phy;Sedative hypnotics drugs I@Pha;Enteroviruses and poliomyelitis@Mic','Tutorial: Opioid analgesics, antiseizure drugs and drugs for Parkinson’s disease@Pharmacology 1;Tutorial: Cerebellum, Ventricles, internal capsule@Anatomy 3'],
+['Wed 7 Oct','Learning & Memory@Phy;Sedative hypnotics drugs II@Pha;Normal distribution curve and Central limit theorem@Res',''],
+['Thu 8 Oct',null,'Day Off for 6th October Armed Forces Day','o'],
+['#','WEEK 6'],
+['Sat 10 Oct','Antidepressant drugs I@Pha;Robo & Arboviral Encephalitis and Prions@Mic;Free-living amoebae@Par','Morphology of CNS diseases@Pathology 1'],
+['Sun 11 Oct','Antidepressant drugs II@Pha;Speech Physiology and Its Disorders@Phy;Toxoplasma gondii 1@Par','Laboratory diagnosis of Meningitis and encephalitis@Microbiology 2;Tutorial: Interactive case discussion on CNS disorders.@Pathology 1'],
+['Mon 12 Oct','Toxoplasma gondii 2+ Other protozoa of the CNS@Par;Posture and Equilibrium 1@Phy;Anatomy of the orbit 1 (Muscles, vessels)@Ana','Tutorial: Case based discussion of viral CNS infections@Microbiology 2'],
+['Tue 13 Oct','Anatomy of the orbit 2 (nerves)@Ana;External & middle coats of eye.@His;Posture and Equilibrium 2@Phy','Parasites of CNS and special senses@Parasitology 1'],
+['Wed 14 Oct','Antipsychotic drugs and mood stabilizers I@Pha;Nervous coat of eye, eyelid & conjunctiva.@His;Introduction To the Physiology of Vision@Phy','Tutorial: Parasitism of the CNS and special sensis@Parasitology 1'],
+['Thu 15 Oct','Antipsychotic drugs and mood stabilizers II@Pha;Accommodation For Near Vision, Light Reflex, Error of Refraction and Visual Acuity@Phy;Vitamin A (rhodopsin vision cycle)@B3','Histology of eye@Histology 3;Eye 1@Physiology 5'],
 ['#','WEEK 7'],
-['Sat 17 Oct','Confidence interval@Res;The retina 1@Phy;Anatomy of the ear@Ana','Reporting adverse drug reaction@Pha'],
-['Sun 18 Oct','The retina 2@Phy;Vestibular apparatus@His;Development of CNS@Ana','Orbit, ear@Ana;Eye 2@Phy'],
-['Mon 19 Oct','Auditory apparatus@His;Retinal adaptation, colour vision, visual pathway@Phy;Physiology of the ear 1@Phy','Tutorial: antidepressants, sedatives, antipsychotics@Pha;Tutorial: eye@Phy'],
+['Sat 17 Oct','Confidence Interval@Res;The Retina 1@Phy;Anatomy of the ear@Ana','Reporting Adverse drug reaction@Pharmacology 2'],
+['Sun 18 Oct','The Retina 2@Phy;Vestibular apparatus@His;Development of CNS@Ana','Orbit, ear@Anatomy 8;Eye 2@Physiology 6'],
+['Mon 19 Oct','Auditory apparatus.@His;Retinal Adaptation, Color Vision and Visual Pathway@Phy;Physiology of the Ear 1@Phy','Tutorial: Antidepressants, sedative hypnotic drugs and antipsychotic drugs@Pharmacology 2;Tutorial: Eye@Physiology 6'],
 ['Tue 20 Oct',null,'ANU Medical School Program’s Conference','o'],
-['Wed 21 Oct','Physiology of the ear 2@Phy;Hypothesis testing@Res;Taste & smell@Phy',''],
-['Thu 22 Oct',null,'Skill Lab','c'],['#','WEEK 8'],['Sat 24 Oct',null,'Skill Lab','c'],
-['Sun 25 Oct','','Ear@Phy;Histology of vestibular & auditory apparatus@His'],
-['Mon 26 Oct','','Tutorial: ear, eye@Ana;Tutorial: ear, taste & smell@Phy;Research practical 2@Res'],['Tue 27 Oct',null,'Study Leave','s'],['Wed 28 Oct',null,'Study Leave','s'],['Thu 29 Oct',null,'Study Leave','s'],['#','WEEK 9'],['Sat 31 Oct',null,'End-of-Module MED319 Exam + MED322 Quiz','x'],['Sun 1 Nov',null,'Study Leave','s'],['Mon 2 Nov',null,'Study Leave','s'],['Tue 3 Nov',null,'Practical Exam','x'],['Wed 4 Nov',null,'Portfolio','x'],['Thu 5 Nov',null,'ACS','x']];
+['Wed 21 Oct','Physiology Of the Ear 2@Phy;Hypothesis testing@Res;Physiology of the Taste and Smell@Phy',''],
+['Thu 22 Oct',null,'Skill Lab (Group A)','c'],
+['#','WEEK 8'],
+['Sat 24 Oct',null,'Skill Lab (Group B)','c'],
+['Sun 25 Oct','','Ear@Physiology 7;Histology of vestibular & auditory apparatuses.@Histology 4'],
+['Mon 26 Oct','','Tutorial: Ear, eye@Anatomy 4;Tutorial: Ear Taste & Smell@Physiology 4;Research@Res'],
+['Tue 27 Oct',null,'Study Leave','s'],['Wed 28 Oct',null,'Study Leave','s'],['Thu 29 Oct',null,'Study Leave','s'],
+['#','WEEK 9'],
+['Sat 31 Oct',null,'End-of-Module MED319 Exam + MED322 Quiz','x'],
+['Sun 1 Nov',null,'Study Leave','s'],['Mon 2 Nov',null,'Study Leave','s'],
+['Tue 3 Nov',null,'Practical Exam','x'],['Wed 4 Nov',null,'Portfolio','x'],['Thu 5 Nov',null,'ACS','x']];
 const P=s=>s?s.split(';').map(x=>x.split('@')):[];
 const DN={Phy:'Physiology',Ana:'Anatomy',His:'Histology',Bio:'Biochemistry',Mic:'Microbiology',Pth:'Pathology',Pha:'Pharmacology',Par:'Parasitology',Res:'Research'};
 const C={},cnt=k=>C[k]=(C[k]||0)+1;let lc=0,pr=0,tu=0,M=[];
@@ -56,8 +66,8 @@ D.forEach(d=>{if(d[0]=='#'){M.push({w:d[1]});return}
 const [dt,l,p,sp]=d,[wd,...r]=dt.split(' '),day=r.join(' ');
 if(l===null){M.push({dt,wd,day,sp:p,c:sp});return}
 const it=[];
-P(l).forEach((x,j)=>{const res=x[1]=='Res',n=res?cnt('rl'):cnt(x[1]);it.push({t:'L',id:dt+'L'+j,code:res?'LCT '+n+' · MED322':'LCT '+(++lc),ti:x[0],dp:DN[x[1]]+' '+n,res})});
-P(p).forEach((x,j)=>{const tut=x[0].startsWith('Tutorial: '),res=x[1]=='Res';it.push({t:tut?'T':'P',id:dt+'P'+j,code:tut?'TUT '+(++tu):res?'PRACT '+cnt('rp')+' · MED322':'PRACT '+(++pr),ti:tut?x[0].slice(10):x[0],dp:DN[x[1]],res})});
+P(l).forEach((x,j)=>{const k=x[1],res=k=='Res'||k=='R1',LIT={B1:'Biochemistry 1',B3:'Biochemistry 3',R1:'Research 1'};it.push({t:'L',id:dt+'L'+j,code:res?'LCT '+cnt('rl')+' · MED322':'LCT '+(++lc),ti:x[0],dp:LIT[k]||(k!='Res'&&DN[k]?DN[k]+' '+cnt(k):''),res})});
+P(p).forEach((x,j)=>{const tut=x[0].startsWith('Tutorial: '),res=x[1]=='Res';it.push({t:tut?'T':'P',id:dt+'P'+j,code:tut?'TUT '+(++tu):res?'PRACT '+cnt('rp')+' · MED322':'PRACT '+(++pr),ti:tut?x[0].slice(10):x[0],dp:res?'':x[1],res})});
 M.push({dt,wd,day,it})});
 let S={},F='all',KEY='schedule-att-v1';try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
@@ -67,7 +77,7 @@ if(m.w){if(f=='all')h+=`<div class="wk">${m.w}</div>`;return}
 if(m.sp!==undefined){if(f=='all')h+=`<section class="day"><div class="dt"><b>${m.wd}</b><span>${m.day}</span></div><div class="sp ${m.c}">${m.sp}</div></section>`;return}
 let L='',Q='',all=true;
 m.it.forEach(x=>{const v=S[x.id]||0;if(v==1)x.t=='L'?n1++:n2++;if(v!=1)all=false;if(f!='all'&&v!=1)return;
-const row=`<button class="r ${x.t} ${v==1?'m':''}" data-id="${x.id}"><span class="cd${x.res?' rs':''}">${x.code}</span><span class="ti">${x.ti} <i>(${x.dp})</i></span><span class="ck">${v==1?'✕':''}</span></button>`;
+const row=`<button class="r ${x.t} ${v==1?'m':''}" data-id="${x.id}"><span class="cd${x.res?' rs':''}">${x.code}</span><span class="ti">${x.ti}${x.dp?` <i>(${x.dp})</i>`:''}</span><span class="ck">${v==1?'✕':''}</span></button>`;
 x.t=='L'?L+=row:Q+=row});
 if(!L&&!Q)return;
 h+=`<section class="day"><div class="dt"><b>${m.wd}</b><span>${m.day}</span><button data-day="${m.dt}">${all?'Clear day':'Missed all day'}</button></div><div class="rows">${L?`<div class="lb">Lectures · Main Lecture Hall (1)</div>${L}`:''}${Q?`<div class="lb">Practical classes &amp; tutorials</div>${Q}`:''}</div></section>`});
